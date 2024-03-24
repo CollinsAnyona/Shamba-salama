@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Description Container Styles */
+.description-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px; /* Increase padding for more spacing */
+}
+
+/* Shamba Salama Styles */
+.shamba-salama {
+    flex: 1;
+}
+
+.shamba-salama h2 {
+    position: relative;
+    font-size: 5em;
+    color: hsl(90, 50%, 40%);
+    margin-bottom: 20px; /* Add spacing between "Shamba" and "Salama" */
+}
+
+.shamba-salama h2::before,
+.shamba-salama h2::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #76b852;
+    bottom: -10px;
+}
+.shamba-salama h2::before {
+    left: 0;
+}
+.shamba-salama h2::after {
+    right: 0;
+}
+/* Description Styles */
+.description {
+    flex: 1;
+    padding: 40px; /* Increase padding for more spacing */
+}
+
+.description p {
+    font-size: 1.2em;
+    line-height: 1.6; /* Adjust line height for better readability */
+    margin-bottom: 20px; /* Add spacing between paragraphs */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#logo img {
+    width: 150px; /* Adjust logo size as needed */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #76b852;
+}
+
+/* Hero Section Styles */
+#hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px; /* Add padding to top and bottom only */
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #76b852;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #5a9650;
+}
+
+/* Why Choose Section Styles */
+#why-choose {
+    background-color: #f9f9f9;
+    padding: 80px 20px; /* Add padding to top and bottom only */
+}
+
+#why-choose h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#why-choose ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+}
+
+#why-choose ul li {
+    margin-bottom: 20px;
+}
+
+/* How It Works Section Styles */
+#how-it-works {
+    padding: 80px 20px; /* Add padding to top and bottom only */
+}
+
+#how-it-works h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#how-it-works ol {
+    margin: 0;
+    padding: 0;
+}
+
+#how-it-works ol li {
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: hsl(90, 50%, 60%);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Leaf Splash Styles */
+.splash {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.leaf {
+    width: 100px;
+    height: 100px;
+    background-color: #76b852; /* Leaf color */
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    animation: splashAnimation 2s ease-out infinite;
+    border-radius: 50%;
+}
+
+@keyframes splashAnimation {
+    0% {
+        transform: translateX(-50%) rotate(45deg) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) rotate(45deg) translateY(-50px);
+    }
+    100% {
+        transform: translateX(-50%) rotate(45deg) translateY(0);
+    }
+}
